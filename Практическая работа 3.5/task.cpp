@@ -48,46 +48,5 @@ int main() {
 Итого доход: 15 руб.
 */
 
-std::string stopNames[4] = {"Programmers street", "Algorhitm street" "Frunze", "Sain"};
-int passengersIn = 0;
-int passengersOut = 0;
-int passengersTotal = 0;
-std::cout << "Прибываем на остановку «" << stopNames[0] << "». В салоне пассажиров: " << passengersTotal << std::endl;
-std::cout << "Сколько пассажиров вышло на остановке? ";
-std::cin >> passengersOut;
-std::cout << "Сколько пассажиров зашло на остановке? ";
-std::cin >> passengersIn;
-passengersTotal += passengersIn - passengersOut;
-std::cout << "Отправляемся с остановки «" << stopNames[0] << "». В салоне пассажиров: " << passengersTotal << std::endl;
-std::cout << "-----------Едем---------" << std::endl;
-std::cout << "Прибываем на остановку «" << stopNames[1] << "». В салоне пассажиров: " << passengersTotal << std::endl;
-std::cout << "Сколько пассажиров вышло на остановке? ";
-std::cin >> passengersOut;
-std::cout << "Сколько пассажиров зашло на остановке? ";
-std::cin >> passengersIn;
-passengersTotal += passengersIn - passengersOut;
-std::cout << "Отправляемся с остановки «" << stopNames[1] << "». В салоне пассажиров: " << passengersTotal << std::endl;
-std::cout << "-----------Едем---------" << std::endl;
-std::cout << "Прибываем на остановку «" << stopNames[2] << "». В салоне пассажиров: " << passengersTotal << std::endl;
-std::cout << "Сколько пассажиров вышло на остановке? ";
-std::cin >> passengersOut;
-std::cout << "Сколько пассажиров зашло на остановке? ";
-std::cin >> passengersIn;
-passengersTotal += passengersIn - passengersOut;
-std::cout << "Отправляемся с остановки «" << stopNames[2] << "». В салоне пассажиров: " << passengersTotal << std::endl;
-std::cout << "-----------Едем---------" << std::endl;
-std::cout << "Прибываем на остановку «" << stopNames[3] << "». В салоне пассажиров: " << passengersTotal << std::endl;
-std::cout << "Сколько пассажиров вышло на остановке? ";
-std::cin >> passengersOut;
-std::cout << "Сколько пассажиров зашло на остановке? ";
-std::cin >> passengersIn;
-passengersTotal += passengersIn - passengersOut;
-std::cout << "Отправляемся с остановки «" << stopNames[3] << "». В салоне пассажиров: " << passengersTotal << std::endl;
-std::cout << "Всего заработали: " << passengersTotal * 20 << " руб." << std::endl;
-std::cout << "Зарплата водителя: " << (passengersTotal * 20) / 4 << " руб." << std::endl;
-std::cout << "Расходы на топливо: " << (passengersTotal * 20) / 5 << " руб." << std::endl;
-std::cout << "Налоги: " << (passengersTotal * 20) / 5 << " руб." << std::endl;
-std::cout << "Расходы на ремонт машины: " << (passengersTotal * 20) / 5 << " руб." << std::endl;
-std::cout << "Итого доход: " << (passengersTotal * 20) - ((passengersTotal * 20) / 4 + (passengersTotal * 20) / 5 + (passengersTotal * 20) / 5 + (passengersTotal * 20) / 5) << " руб." << std::endl;
 
 }
